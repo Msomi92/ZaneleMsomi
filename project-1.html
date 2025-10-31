@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      h1 {
+        color: #e52020;
+        text-align: center;
+        text-decoration: underline;
+        font-style: italic;
+        padding: 10px;
+      }
+      h2 {
+        color: #9112bc;
+        text-align: center;
+        border: 1px solid #9112bc;
+        border-radius: 4px;
+      }
+
+      h3 {
+        text-align: center;
+        color: #640d5f;
+        margin: 40px 0 10px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 4px;
+      }
+      li {
+        color: blue;
+        text-align: center;
+        list-style-type: none;
+        margin: 0 30px;
+      }
+      div {
+        color: #9112bc;
+        text-align: center;
+        font-size: 20px;
+        margin: 20px 20px 0;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        border: 1px solid #9112bc;
+        background: #9112bc;
+        color: #fff;
+        font-size: 16px;
+        line-height: 22px;
+        padding: 16px 24px;
+        border-radius: 30px;
+        transition: all 200ms ease;
+        box-shadow: rgba(37, 39, 89, 0.08) 0px 8px 8px 0;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: white;
+        color: #9112bc;
+        border: 1px solid #9112bc;
+      }
+
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        color: grey;
+        text-align: center;
+        font-style: italic;
+        margin: 20px 20px;
+      }
+      a {
+        text-align: center;
+        font-size: 12px;
+        text-decoration: none;
+        font-style: italic;
+        display: block;
+        margin: 8px 2px;
+      }
+      a:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+
+      body {
+        background-color: #ffedfa;
+      }
+    </style>
+    <title>Project 1 Basic Coding</title>
+  </head>
+  <body>
+    <h1>Strawberries</h1>
+    <h2>My Favorite Fruit 🍓</h2>
+    <hr />
+    <img
+      src="https://cdn.britannica.com/22/75922-050-D3982BD0/flowers-fruits-garden-strawberry-plant-species.jpg"
+      alt="Strawberries picture"
+      width="200"
+    />
+    <hr />
+    <span>
+      <em>
+        Strawberries are one of the world’s most popular fruit. They’re bite
+        size and decadently sweet. What’s not to love? They’re also incredibly
+        nutritious, packed with vitamins, fiber, and antioxidants known as
+        polyphenols. The fruit is appreciated for its aroma, bright red colour,
+        juicy texture, and sweetness.</em
+      >
+    </span>
+    <br />
+    <div><strong>Facts About Strawberries</strong></div>
+    <ul>
+      <li>The Early fruit tastes the Sweetest</li>
+      <li>Strawberries are a Type of Rose</li>
+      <li>Strawberries Can Be A Variety of Different Colors</li>
+      <li>Strawberries Contain more Vitamin C than Orange</li>
+      <li>The Fear of Strawberries is Called Fragariaphobia</li>
+    </ul>
+
+    <h3>Links For more info :</h3>
+
+    <a href="https://en.wikipedia.org/wiki/Strawberry" target="_blank"
+      >Background About Strawberries
+    </a>
+
+    <a
+      href="https://www.bbcgoodfood.com/recipes/collection/healthy-strawberry-recipes"
+      target="_blank"
+      >Healthy Strawberry Recipes</a
+    >
+    <br />
+
+    <button onclick="askForfun();">Buy Now</button>
+    <p>Coded by Zanele Msomi</p>
+
+    <script>
+      function askForfun() {
+        let straw = prompt("Is Strawberry a fruit:Yes or No?");
+        straw = straw.toLowerCase().trim();
+
+        if (straw === "yes") {
+          alert("You derserve a 🍓! Have a Fantastic day.");
+        } else {
+          alert("Oopss..Try again, dont keep 🍓 waiting....");
+        }
+      }
+    </script>
+  </body>
+</html>
